@@ -1,0 +1,5 @@
+<ul>
+  <% @events.each do |event| %>
+    <li> <%= "#{event.name} in #{event.location}: #{number_to_currency(event.price, {precision: 2})}"%> </li>
+  <% end %>
+</ul>

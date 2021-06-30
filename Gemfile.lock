@@ -64,6 +64,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (10.2.5.1)
       execjs (> 0)
+    bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.7.5)
       msgpack (~> 1.0)
@@ -104,10 +105,12 @@ GEM
     marcel (1.0.1)
     method_source (1.0.0)
     mini_mime (1.0.3)
+    mini_portile2 (2.5.3)
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.7)
-    nokogiri (1.11.7-x86_64-darwin)
+    nokogiri (1.11.7)
+      mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     popper_js (1.16.0)
     public_suffix (4.0.6)
@@ -209,6 +212,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   bootstrap (~> 4.3.1)
   byebug

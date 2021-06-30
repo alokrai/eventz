@@ -9,5 +9,5 @@ Ruby on Rails 6
 
 ## Installation instructions
 
-License
+License: MIT
 

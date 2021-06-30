@@ -1,12 +1,11 @@
 
 # Eventz: Events Registation Web App
+Technologies used: Ruby on Rails 6
 
 ## Demo
 
 ## Purpose
 
-## Technologies used
-Ruby on Rails 6
 
 ## Installation instructions
 

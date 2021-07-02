@@ -1,11 +1,12 @@
+# frozen_string_literal: true
+
 module EventsHelper
   def price(event)
-    event.free? ? "Free" : number_to_currency(event.price, precision: 0)
+    event.free? ? 'Free' : number_to_currency(event.price, precision: 0)
   end
 
   def day_and_time(event)
     puts event.starts_at
-    event.starts_at.strftime("%B %d at %I:%M %P")
+    event.starts_at.strftime('%B %d at %I:%M %P')
   end
-
 end

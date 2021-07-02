@@ -1,5 +1,6 @@
-class UsersController < ApplicationController
+# frozen_string_literal: true
 
+class UsersController < ApplicationController
   before_action :require_signin, except: %i[new create]
   before_action :require_correct_user, only: %i[edit update destroy]
 
@@ -10,7 +11,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @registrations = @user.registrations
-    @liked_events = User.liked_events
+    @liked_events = @user.liked_events
   end
 
   def new

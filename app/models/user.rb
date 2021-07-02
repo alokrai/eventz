@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   has_secure_password
 
@@ -7,5 +9,5 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :email, format: URI::MailTo::EMAIL_REGEXP,
-                   uniqueness: { case_sensitive: false }
+                    uniqueness: { case_sensitive: false }
 end

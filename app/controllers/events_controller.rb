@@ -1,5 +1,6 @@
-class EventsController < ApplicationController
+# frozen_string_literal: true
 
+class EventsController < ApplicationController
   before_action :require_signin, except: %i[index show]
   before_action :require_admin, except: %i[index show]
 
@@ -49,8 +50,7 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).
-      permit(:name, :description, :location, :price, :starts_at, :image_file_name, :capacity)
+    params.require(:event)
+          .permit(:name, :description, :location, :price, :starts_at, :image_file_name, :capacity)
   end
-
 end

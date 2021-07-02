@@ -1,5 +1,6 @@
-class ApplicationController < ActionController::Base
+# frozen_string_literal: true
 
+class ApplicationController < ActionController::Base
   private
 
   def current_user
@@ -9,7 +10,7 @@ class ApplicationController < ActionController::Base
   def require_signin
     unless current_user
       session[:intended_url] = request.url
-      redirect_to new_session_url, alert: "please signin"
+      redirect_to new_session_url, alert: 'please signin'
     end
   end
 

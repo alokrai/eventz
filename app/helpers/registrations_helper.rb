@@ -1,6 +1,7 @@
-module RegistrationsHelper
+# frozen_string_literal: true
 
-  def register_or_sold_out event
+module RegistrationsHelper
+  def register_or_sold_out(event)
     if event.sold_out?
       content_tag(:span, 'sold out', class: 'sold-out')
     else

@@ -1,5 +1,6 @@
-class RegistrationsController < ApplicationController
+# frozen_string_literal: true
 
+class RegistrationsController < ApplicationController
   before_action :set_event
   before_action :require_signin
 
@@ -15,7 +16,7 @@ class RegistrationsController < ApplicationController
     @registration = @event.registrations.new(registration_params)
     @registration.user = current_user
     if @registration.save
-      redirect_to event_registrations_url(@event), notice: "Thanks for registering!"
+      redirect_to event_registrations_url(@event), notice: 'Thanks for registering!'
     else
       render :new
     end
@@ -30,9 +31,4 @@ class RegistrationsController < ApplicationController
   def set_event
     @event = Event.find(params[:event_id])
   end
-
 end
-
-
-
-

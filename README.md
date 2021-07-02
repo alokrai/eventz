@@ -8,9 +8,6 @@ Eventz is an events registration web application built in Ruby on Rails, allowin
 
 ## Demo
 
-
-
-
 ## Installation instructions
 1. Clone the repository using `git clone https://github.com/alokrai/eventz.git`
 2. Run `bundle install`

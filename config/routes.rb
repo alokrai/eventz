@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :likes
+
   root to: 'events#index'
 
   resources :events do
     resources :registrations
+    resources :likes
   end
 
   resources :users

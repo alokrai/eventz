@@ -2,7 +2,10 @@
 
 Rails.application.routes.draw do
 
+  resources :categories
   root to: 'events#index'
+
+  get "events/filter/:filter", to: 'events#index', as: 'filtered_events'
 
   resources :events do
     resources :registrations

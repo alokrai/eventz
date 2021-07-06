@@ -1,6 +1,6 @@
 # Eventz: Events Registation Web App
 **Technologies used: Ruby on Rails 6**  
-[Live Application](https://google.com)
+[Live Application](https://eventz-web-app.herokuapp.com)
 
 Eventz is an events registration web application built in Ruby on Rails, allowing admins to post events, and users to sign up for them.
 
